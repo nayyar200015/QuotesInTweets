@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=League+Gothic&family=Quicksand&display=swap');
+
+.container-fluid {
+    height: 100vh;
+    background-color: #282c3c;
+    display: flex;
+    align-items: center;
+
+    .outer {
+        width: 50%;
+        height: 60%;
+        background-color: #509cfc;
+        border-radius: 1%;
+        display: flex;
+        align-items: center;
+
+        .inner {
+            border-radius: 1%;
+            box-shadow: 2px 2px 19px 1px black;
+            width: 75%;
+            height: 75%;
+
+            .row {
+                &:nth-of-type(1) {
+                    height: 80%;
+
+                    .col-10 {
+                        height: 100%;
+
+                        .text {
+                            i {
+                                color: #dbdadf;
+                                font-size: 3rem;
+                                position: absolute;
+                                top: 1.3rem;
+                            }
+
+                            #quotes {
+                                font-size: 1.7rem;
+                                color: #787879;
+                                font-family: 'Dancing Script', cursive;
+                                position: absolute;
+                                top: 5rem;
+                                left: 2.7rem;
+                            }
+
+                            #author {
+                                font-size: 1.2rem;
+                                color: #787879;
+                                font-family: 'League Gothic', sans-serif;
+                                position: absolute;
+                                bottom: 0;
+                                right: 0;
+                            }
+                        }
+                    }
+
+                    .col-2 {
+                        height: 100%;
+
+                        .number {
+                            width: 4rem;
+                            height: 4rem;
+                            background-color: #a4c4dc;
+                            clip-path: polygon(0 0, 100% 0, 100% 99%);
+                            position: absolute;
+                            right: 0;
+                            top: 0;
+
+                            img {
+                                width: 35%;
+                                height: 35%;
+                                position: absolute;
+                                left: 50%;
+                                top: 10%;
+                            }
+
+                            &:hover img {
+                                animation: rot 1s linear;
+                            }
+
+                            @keyframes rot {
+                                from {
+                                    transform: rotate(0deg);
+                                }
+
+                                to {
+                                    transform: rotate(360deg);
+                                }
+                            }
+                        }
+                    }
+                }
+
+                &:nth-of-type(2) {
+                    height: 20%;
+                    background-color: #087ce4;
+
+                    .col {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                        .button {
+                            color: #fff;
+                            margin-bottom: 0;
+                            line-height: 1.5rem;
+                            padding-top: 7px;
+
+                            p {
+                                font-weight: bold;
+                                font-size: 1.7rem;
+                                font-family: 'Times New Roman', Times, serif;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:992px) {
+    .container-fluid {
+        .outer {
+            width: 97%;
+            height: 90%;
+
+            .inner {
+                width: 99%;
+                height: 90%;
+
+                .row {
+                    &:nth-of-type(1) {
+                        height: 90%;
+                    }
+
+                    &:nth-of-type(2) {
+                        height: 10%;
+                    }
+                }
+            }
+        }
+    }
+}
