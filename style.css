@@ -1,12 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=League+Gothic&family=Quicksand&display=swap");
-
 .container-fluid {
   height: 100vh;
   background-color: #282c3c;
   display: flex;
   align-items: center;
 }
-
 .container-fluid .outer {
   width: 50%;
   height: 60%;
@@ -15,29 +13,24 @@
   display: flex;
   align-items: center;
 }
-
 .container-fluid .outer .inner {
   border-radius: 1%;
   box-shadow: 2px 2px 19px 1px black;
   width: 75%;
   height: 75%;
 }
-
 .container-fluid .outer .inner .row:nth-of-type(1) {
   height: 80%;
 }
-
 .container-fluid .outer .inner .row:nth-of-type(1) .col-10 {
   height: 100%;
 }
-
 .container-fluid .outer .inner .row:nth-of-type(1) .col-10 .text i {
   color: #dbdadf;
   font-size: 3rem;
   position: absolute;
   top: 1.3rem;
 }
-
 .container-fluid .outer .inner .row:nth-of-type(1) .col-10 .text #quotes {
   font-size: 1.7rem;
   color: #787879;
@@ -46,7 +39,6 @@
   top: 5rem;
   left: 2.7rem;
 }
-
 .container-fluid .outer .inner .row:nth-of-type(1) .col-10 .text #author {
   font-size: 1.2rem;
   color: #787879;
@@ -55,22 +47,19 @@
   bottom: 0;
   right: 0;
 }
-
 .container-fluid .outer .inner .row:nth-of-type(1) .col-2 {
   height: 100%;
 }
-
 .container-fluid .outer .inner .row:nth-of-type(1) .col-2 .number {
   width: 4rem;
   height: 4rem;
   background-color: #a4c4dc;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 99%);
-  clip-path: polygon(0 0, 100% 0, 100% 99%);
+          clip-path: polygon(0 0, 100% 0, 100% 99%);
   position: absolute;
   right: 0;
   top: 0;
 }
-
 .container-fluid .outer .inner .row:nth-of-type(1) .col-2 .number img {
   width: 35%;
   height: 35%;
@@ -78,54 +67,47 @@
   left: 50%;
   top: 10%;
 }
-
 .container-fluid .outer .inner .row:nth-of-type(1) .col-2 .number:hover img {
   -webkit-animation: rot 1s linear;
-  animation: rot 1s linear;
+          animation: rot 1s linear;
 }
-
 @-webkit-keyframes rot {
   from {
     transform: rotate(0deg);
   }
-
   to {
     transform: rotate(360deg);
   }
 }
-
 @keyframes rot {
   from {
     transform: rotate(0deg);
   }
-
   to {
     transform: rotate(360deg);
   }
 }
-
 .container-fluid .outer .inner .row:nth-of-type(2) {
   height: 20%;
   background-color: #087ce4;
 }
-
 .container-fluid .outer .inner .row:nth-of-type(2) .col {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
 .container-fluid .outer .inner .row:nth-of-type(2) .col .button {
-  color: #fff;
   margin-bottom: 0;
   line-height: 1.5rem;
   padding-top: 7px;
 }
-
-.container-fluid .outer .inner .row:nth-of-type(2) .col .button p {
+.container-fluid .outer .inner .row:nth-of-type(2) .col .button button {
+  color: #fff;
+  background-color: transparent;
   font-weight: bold;
   font-size: 1.7rem;
   font-family: "Times New Roman", Times, serif;
+  border: none;
 }
 
 @media screen and (max-width: 992px) {
@@ -133,19 +115,14 @@
     width: 97%;
     height: 90%;
   }
-
   .container-fluid .outer .inner {
     width: 99%;
     height: 90%;
   }
-
   .container-fluid .outer .inner .row:nth-of-type(1) {
     height: 90%;
   }
-
   .container-fluid .outer .inner .row:nth-of-type(2) {
     height: 10%;
   }
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

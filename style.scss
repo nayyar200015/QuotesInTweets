@@ -102,15 +102,17 @@
                         align-items: center;
 
                         .button {
-                            color: #fff;
                             margin-bottom: 0;
                             line-height: 1.5rem;
                             padding-top: 7px;
-
-                            p {
+                            
+                            button {
+                                color: #fff;
+                                background-color: transparent;
                                 font-weight: bold;
                                 font-size: 1.7rem;
                                 font-family: 'Times New Roman', Times, serif;
+                                border: none;
                             }
                         }
                     }
